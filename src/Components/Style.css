@@ -1,0 +1,134 @@
+/* Header */
+.head-title {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 40;
+  margin: 0;
+}
+.App-header {
+  background-image: linear-gradient(to right, rgb(3, 37, 65), #e7cfcd);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(4px + 2vmin);
+  color: white;
+  padding: 0 20px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+  color: white;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
+/* Genres */
+.genres-list {
+  display: inline-flex;
+  list-style-type: none;
+}
+.genre {
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.genre:hover {
+  cursor: pointer;
+  color: rgb(3, 37, 65);
+}
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .genre {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .genre {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .genre {
+    font-size: 8px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .genre {
+    font-size: 5px;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Loader */
+.container {
+  left: 45%;
+  top: 45%;
+  position: absolute;
+}
+.circle {
+  border-radius: 100%;
+  position: absolute;
+}
+.circle0 {
+  height: 120px;
+  width: 120px;
+  border-top: 10px solid #c5979d;
+  border-left: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  animation: spin 2s linear reverse infinite;
+  top: 10px;
+  left: 10px;
+}
+.circle1 {
+  height: 100px;
+  width: 100px;
+  border-left: solid 10px #e7cfcd;
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  animation: spin 2s linear infinite;
+  top: 20px;
+  left: 20px;
+}
+.circle2 {
+  height: 80px;
+  width: 80px;
+  border-right: solid 10px #93b7be;
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  border-left: 10px solid rgba(0, 0, 0, 0);
+  animation: spin 2s linear infinite;
+  top: 30px;
+  left: 30px;
+}
+.circle3 {
+  height: 60px;
+  width: 60px;
+  border-left: solid 10px #4b8f8c;
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  animation: spin 2s linear reverse infinite;
+  top: 40px;
+  left: 40px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
