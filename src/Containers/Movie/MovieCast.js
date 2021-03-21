@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { API_KEY, IMAGE_URL, PLACEHOLDER_IMG } from "../../js/Utils";
 
-const MovieCast = props => {
+const MovieCast = (props) => {
   const [casts, setCast] = useState([]);
 
-  const getMovieCrew = movieId => {
+  const getMovieCrew = (movieId) => {
     fetch(
       `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}&language=en-US`
     )
-      .then(response => response.json())
-      .then(jsonResponse => {
+      .then((response) => response.json())
+      .then((jsonResponse) => {
         if (jsonResponse) {
           setCast(jsonResponse.cast);
         }
@@ -22,8 +22,14 @@ const MovieCast = props => {
 
   return (
     <>
+      <div
+        className="cast-title"
+        // style={{ color: `${props.colors[0]}` }}
+      >
+        CAST
+      </div>
       <div className="cast">
-        {casts.map(cast => {
+        {casts.map((cast) => {
           return (
             <div
               className="cast-person"
