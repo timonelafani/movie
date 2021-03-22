@@ -5,6 +5,7 @@ import Header from "./Containers/MainNav/Header";
 import Movies from "./Containers/Movie/Movies";
 import MovieDetails from "./Containers/Movie/MovieDetails";
 import { Route, Switch, useHistory } from "react-router-dom";
+import Footer from "./Containers/MainNav/Footer";
 
 const SEARCH_MOVIES = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US
 `;
@@ -92,6 +93,7 @@ function App() {
           <MovieDetails />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

@@ -392,3 +392,53 @@ iframe {
 .rec-movie-detail {
   background-color: white;
 }
+
+/* Footer */
+
+.App-footer {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-content: center;
+  text-align: center;
+  height: 250px;
+  padding: 50px 70px;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+
+.footer-logo {
+  width: 130px;
+  height: 180px
+}
+
+.footer-descritption-title {
+  padding: 0 100px 0 200px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.footer-descritption {
+  padding: 0 100px 0 200px;
+  /* font-size: 1rem;
+  font-weight: 900;
+  text-transform: capitalize; */
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-align: left;
+  font-weight: normal;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #F8F9FA;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: 'Assistant', sans-serif;
+  color: #2E5260;
+}
